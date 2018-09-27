@@ -1,0 +1,39 @@
+{
+    "author": "linterhub <hi@linterhub.com>",
+    "name": "@linterhub/jmc",
+    "version": "0.0.0-development",
+    "description": "Json to Markdown Converter",
+    "license": "MIT",
+    "repository": "linterhub/JMC",
+    "bugs": "https://github.com/linterhub/JMC/issues",
+    "keywords": [
+        "linterhub",
+        "json-schema",
+        "markdown",
+        "convertor"
+    ],
+    "scripts": {
+        "eslint": "./node_modules/.bin/eslint",
+        "lint": "eslint .",
+        "test": "npm run lint"
+    },
+    "files": [
+        "src/",
+        "README.md"
+    ],
+    "husky": {
+        "hooks": {
+            "pre-commit": "npm run test"
+        }
+    },
+    "publishConfig": {
+        "registry": "https://registry.npmjs.org/",
+        "tag": "latest",
+        "access": "public"
+    },
+    "devDependencies": {
+        "husky": "^0.14.3",
+        "eslint": "^5.1.0",
+        "eslint-config-google": "^0.9.1"
+    }
+}
